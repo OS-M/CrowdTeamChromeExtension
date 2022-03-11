@@ -1,0 +1,24 @@
+{
+   "browser_action": {
+      "default_icon": "img/128x128.png",
+      "default_popup": "popup.html"
+   },
+   "description": "CrowdTeamExtension",
+   "icons": {
+      "128": "img/128x128.png",
+      "16": "img/16x16.png",
+      "48": "img/48x48.png"
+   },
+   "manifest_version": 2,
+   "name": "CrowdTeamExtension",
+   "offline_enabled": true,
+   "permissions": [
+      "activeTab",
+      "storage"
+   ],
+   "version": "2",
+   "content_scripts": [{
+      "js": ["back.js"],
+      "matches": ["https://nearcrowd.com/*"]
+   }]
+}
