@@ -166,7 +166,7 @@ executeScript({ what: 'get', type: type }, function(response) {
             token = item.crowd_token;
         }
 
-        var server = "http://45.80.70.155"
+        var server = "https://crowdteam.fun"
         // server = "http://localhost:1338"
 
         {
