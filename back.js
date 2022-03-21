@@ -9,7 +9,7 @@ var observer = new MutationObserver(function(mutations) {
         can_send = true;
       }
       if (batch_item.cur_batch) {
-        cur_name = batch_item.cur_batch.split(' ').slice(1).join('').replaceAll(' ', '');
+        cur_name = batch_item.cur_batch.split(' ').slice(1, -1).join('').replaceAll(' ', '');
       }
       for (var i = 0, l = buttons.length; i < l; i++) {
         var content = buttons[i].parentNode.textContent.replaceAll(' ', '');
