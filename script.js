@@ -167,7 +167,7 @@ executeScript({ what: 'get', type: type }, function(response) {
         }
 
         var server = "https://crowdteam.fun"
-        // server = "http://localhost:1338"
+        server = "http://localhost:1338"
 
         {
             const xhttp = new XMLHttpRequest();
